@@ -1,5 +1,0 @@
-{
-    "buildCommand": "cd assets && npm run build",
-    "outputDirectory": "assets/.next",
-    "framework": "nextjs"
-}
