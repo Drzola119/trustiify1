@@ -83,11 +83,11 @@ export default function ContactSection() {
                     </form>
 
                     <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-8">
-                        <a href="mailto:hello@trustiify.agency" className="flex items-center gap-3 text-text-secondary hover:text-white transition-colors">
+                        <a href="mailto:ads@trustiify.agency" className="flex items-center gap-3 text-text-secondary hover:text-white transition-colors">
                             <EnvelopeSimple size={24} />
-                            <span className="font-medium">hello@trustiify.agency</span>
+                            <span className="font-medium">ads@trustiify.agency</span>
                         </a>
-                        <a href="https://wa.me/1234567890?text=Hi%20Trustiify!%20I%20found%20you%20on%20your%20website%20and%20I'd%20like%20to%20book%20a%20strategy%20call." target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-text-secondary hover:text-[#25D366] transition-colors">
+                        <a href="https://wa.me/19083840281?text=Hi%20Trustiify!%20I%20found%20you%20on%20your%20website%20and%20I'd%20like%20to%20book%20a%20strategy%20call." target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-text-secondary hover:text-[#25D366] transition-colors">
                             <WhatsappLogo size={24} />
                             <span className="font-medium">WhatsApp Us</span>
                         </a>
