@@ -4,7 +4,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
     X,
-    ChatsCircle,
     WhatsappLogo,
     EnvelopeSimple,
     InstagramLogo,
@@ -240,7 +239,7 @@ export const FloatingContactButton = ({
                                                     <div className="text-5xl">🎉</div>
                                                 </div>
                                                 <h3 className="text-2xl font-bold text-white mb-2">Strategy Call Booked!</h3>
-                                                <p className="text-text-secondary mb-8">We'll reach out within 2 hours. Check your email.</p>
+                                                <p className="text-text-secondary mb-8">We&apos;ll reach out within 2 hours. Check your email.</p>
                                             </motion.div>
                                         ) : (
                                             <motion.div key="form" exit={{ opacity: 0, scale: 0.95 }} className="p-6">

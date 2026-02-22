@@ -24,85 +24,86 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
 
-  @keyframes orbit {
-    from {
-      transform: rotate(0deg) translateX(40px) rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg) translateX(40px) rotate(-360deg);
-    }
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(40px) rotate(0deg);
   }
 
-  @keyframes trending-up {
-    0% {
-      transform: translateY(0) translateX(0);
-      opacity: 1;
-    }
+  to {
+    transform: rotate(360deg) translateX(40px) rotate(-360deg);
+  }
+}
 
-    100% {
-      transform: translateY(-30px) translateX(10px);
-      opacity: 0;
-    }
+@keyframes trending-up {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
   }
 
-  @keyframes data-stream {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
+  100% {
+    transform: translateY(-30px) translateX(10px);
+    opacity: 0;
+  }
+}
 
-    10% {
-      opacity: 0.15;
-    }
-
-    90% {
-      opacity: 0.15;
-    }
-
-    100% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
+@keyframes data-stream {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
   }
 
-  @keyframes bar-chart {
-
-    0%,
-    100% {
-      height: 40%;
-    }
-
-    33% {
-      height: 100%;
-    }
-
-    66% {
-      height: 70%;
-    }
+  10% {
+    opacity: 0.15;
   }
 
-  @keyframes gradient-shift {
-    0% {
-      background-position: 0% 50%;
-    }
-
-    50% {
-      background-position: 100% 50%;
-    }
-
-    100% {
-      background-position: 0% 50%;
-    }
+  90% {
+    opacity: 0.15;
   }
 
-  @keyframes conic-spin {
-    from {
-      --angle: 0deg;
-    }
-
-    to {
-      --angle: 360deg;
-    }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
+}
+
+@keyframes bar-chart {
+
+  0%,
+  100% {
+    height: 40%;
+  }
+
+  33% {
+    height: 100%;
+  }
+
+  66% {
+    height: 70%;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes conic-spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
