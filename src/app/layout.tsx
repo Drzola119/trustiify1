@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { FloatingContactButton } from "@/components/FloatingContactButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,6 +37,12 @@ export default function RootLayout({
       </head>
       <body className="antialiased bg-[#050810] text-white selection:bg-cyan-500/30 overflow-x-hidden">
         {children}
+        <FloatingContactButton
+          web3formsKey="YOUR_KEY_HERE"
+          whatsappNumber="19083840281"
+          email="ads@trustiify.agency"
+          instagramUrl="https://instagram.com/trustiify"
+        />
       </body>
     </html>
   );
