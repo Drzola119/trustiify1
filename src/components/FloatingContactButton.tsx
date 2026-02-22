@@ -22,12 +22,12 @@ interface FABProps {
     instagramUrl?: string;
 }
 
-export const FloatingContactButton: React.FC<FABProps> = ({
+export const FloatingContactButton = ({
     web3formsKey,
     whatsappNumber = "19083840281",
     email = "ads@trustiify.agency",
     instagramUrl = "https://instagram.com/trustiify",
-}) => {
+}: FABProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -35,8 +35,16 @@ export const FloatingContactButton: React.FC<FABProps> = ({
     const [placeholderText, setPlaceholderText] = useState("We want to reach 10x ROI...");
     const formRef = useRef<HTMLDivElement>(null);
 
+    interface ContactFormData {
+        name: string;
+        email: string;
+        budget: string;
+        services: string[];
+        message: string;
+    }
+
     // Form State
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<ContactFormData>({
         name: "",
         email: "",
         budget: "",
@@ -334,8 +342,8 @@ export const FloatingContactButton: React.FC<FABProps> = ({
                                                                         type="button"
                                                                         onClick={() => handleServiceToggle(service)}
                                                                         className={`relative px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 border ${isSelected
-                                                                                ? "bg-gradient-to-r from-brand-cyan/20 to-brand-purple/20 border-brand-cyan text-white shadow-[0_0_10px_rgba(0,212,255,0.2)] scale-105"
-                                                                                : "bg-white/5 border-white/10 text-text-secondary hover:bg-white/10 hover:border-white/20"
+                                                                            ? "bg-gradient-to-r from-brand-cyan/20 to-brand-purple/20 border-brand-cyan text-white shadow-[0_0_10px_rgba(0,212,255,0.2)] scale-105"
+                                                                            : "bg-white/5 border-white/10 text-text-secondary hover:bg-white/10 hover:border-white/20"
                                                                             }`}
                                                                     >
                                                                         <span className="flex items-center gap-1">
