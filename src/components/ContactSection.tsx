@@ -8,15 +8,49 @@ export default function ContactSection() {
     const [submitting, setSubmitting] = useState(false);
     const [success, setSuccess] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        budget: "",
+        message: ""
+    });
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setSubmitting(true);
-        // Simulate form submission
-        setTimeout(() => {
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    access_key: "35108804-8b5b-4b4d-93e5-9a987cd78df7",
+                    name: formData.name,
+                    email: formData.email,
+                    budget: formData.budget,
+                    message: formData.message,
+                    subject: `Trustiify — Strategy Call Request from ${formData.name}`,
+                    from_name: "Trustiify Contact Section",
+                    redirect: false,
+                }),
+            });
+
+            if (response.ok) {
+                setSuccess(true);
+                setFormData({ name: "", email: "", budget: "", message: "" });
+                setTimeout(() => setSuccess(false), 5000);
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Failed to submit form. Please check your connection.");
+        } finally {
             setSubmitting(false);
-            setSuccess(true);
-            setTimeout(() => setSuccess(false), 5000);
-        }, 1500);
+        }
     };
 
     return (
@@ -48,18 +82,18 @@ export default function ContactSection() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="space-y-2">
                                 <label className="text-sm font-medium text-text-secondary pl-1">Full Name</label>
-                                <input required type="text" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-colors" placeholder="John Doe" />
+                                <input required type="text" name="name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-colors" placeholder="John Doe" />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-sm font-medium text-text-secondary pl-1">Work Email</label>
-                                <input required type="email" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-colors" placeholder="john@company.com" />
+                                <input required type="email" name="email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-colors" placeholder="john@company.com" />
                             </div>
                         </div>
 
                         <div className="space-y-2">
                             <label className="text-sm font-medium text-text-secondary pl-1">Monthly Marketing Budget</label>
-                            <select required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-colors appearance-none cursor-pointer">
-                                <option value="" disabled selected className="text-gray-500">Select budget range</option>
+                            <select required name="budget" value={formData.budget} onChange={(e) => setFormData({ ...formData, budget: e.target.value })} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-colors appearance-none cursor-pointer">
+                                <option value="" disabled className="text-gray-500">Select budget range</option>
                                 <option value="500-1k" className="bg-[#050810] text-white">$500 - $1,000 / month</option>
                                 <option value="1k-5k" className="bg-[#050810] text-white">$1,000 - $5,000 / month</option>
                                 <option value="5k-10k" className="bg-[#050810] text-white">$5,000 - $10,000 / month</option>
@@ -69,7 +103,7 @@ export default function ContactSection() {
 
                         <div className="space-y-2">
                             <label className="text-sm font-medium text-text-secondary pl-1">How can we help?</label>
-                            <textarea required rows={4} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-colors resize-none" placeholder="Tell us about your current challenges and goals..." />
+                            <textarea required name="message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} rows={4} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-colors resize-none" placeholder="Tell us about your current challenges and goals..." />
                         </div>
 
                         <button

@@ -38,7 +38,7 @@ export default function RootLayout({
       <body className="antialiased bg-[#050810] text-white selection:bg-cyan-500/30 overflow-x-hidden">
         {children}
         <FloatingContactButton
-          web3formsKey="YOUR_KEY_HERE"
+          web3formsKey="35108804-8b5b-4b4d-93e5-9a987cd78df7"
           whatsappNumber="19083840281"
           email="ads@trustiify.agency"
           instagramUrl="https://instagram.com/trustiify"
