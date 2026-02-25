@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { FloatingContactButton } from "@/components/FloatingContactButton";
+import { SofiaVoiceWidget } from "@/components/SofiaVoiceWidget";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
           email="ads@trustiify.agency"
           instagramUrl="https://instagram.com/trustiify"
         />
+        <SofiaVoiceWidget />
       </body>
     </html>
   );
