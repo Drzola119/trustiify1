@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // ─── Constants ████████████████████████████████████████████████████████████████
 const SOFIA_URL =
-    "https://ais-pre-vym5ovkvxxtd436maskprc-77562320371.europe-west1.run.app";
+    "https://ai.studio/apps/671f1512-6282-44a6-9807-c8229764ee03";
 
 const AUTO_TRIGGER_MS = 45_000;
 const SCROLL_TRIGGER_PCT = 0.70;
