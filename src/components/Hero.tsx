@@ -119,7 +119,7 @@ export default function Hero() {
 
                 {/* Subheadline */}
                 <p className="hero-subhead text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-12 leading-relaxed opacity-0">
-                    Trustiify combines performance marketing, technical SEO, and conversion-first
+                    Adsify combines performance marketing, technical SEO, and conversion-first
                     design to turn attention into measurable revenue.
                 </p>
 

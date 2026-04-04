@@ -11,12 +11,12 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     <div className="md:col-span-2">
-                        <h3 className="text-3xl font-black font-heading text-white tracking-tight mb-4 tracking-tighter">Trustiify</h3>
+                        <h3 className="text-3xl font-black font-heading text-white tracking-tight mb-4 tracking-tighter">Adsify</h3>
                         <p className="text-text-secondary mb-8 max-w-sm leading-relaxed">
                             Turning attention into revenue, one brand at a time. Scale your operation with data-driven performance marketing and technical SEO.
                         </p>
                         <div className="flex gap-4">
-                            <a href="https://instagram.com/trustiify" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-text-secondary hover:text-white hover:bg-brand-pink/20 hover:border-brand-pink/50 transition-all">
+                            <a href="https://www.instagram.com/adsify_global_llc" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-text-secondary hover:text-white hover:bg-brand-pink/20 hover:border-brand-pink/50 transition-all">
                                 <InstagramLogo size={24} weight="fill" />
                             </a>
                             <a href="#" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-text-secondary hover:text-white hover:bg-blue-500/20 hover:border-blue-500/50 transition-all">
@@ -51,7 +51,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-text-muted font-medium">
-                    <p>© 2026 Trustiify. All rights reserved.</p>
+                    <p>© 2026 Adsify. All rights reserved.</p>
                     <div className="flex gap-6 mt-4 md:mt-0">
                         <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

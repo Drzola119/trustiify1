@@ -275,7 +275,7 @@ export const SofiaVoiceWidget: React.FC = () => {
                                 <iframe
                                     src={SOFIA_URL}
                                     allow="microphone; autoplay; clipboard-write"
-                                    title="Sofia — Trustiify Growth Engine"
+                                    title="Sofia — Adsify Growth Engine"
                                     style={{
                                         width: "100%",
                                         height: "100%",
@@ -314,7 +314,7 @@ export const SofiaVoiceWidget: React.FC = () => {
                                 <iframe
                                     src={SOFIA_URL}
                                     allow="microphone; autoplay; clipboard-write"
-                                    title="Sofia — Trustiify Growth Engine"
+                                    title="Sofia — Adsify Growth Engine"
                                     style={{
                                         width: "100%",
                                         height: "100%",
@@ -518,7 +518,7 @@ function WidgetHeader({ speaking, onMinimize, onClose, mobile = false }: HeaderP
                     letterSpacing: "0.04em",
                     textTransform: "uppercase",
                 }}>
-                    Growth Engine • Trustiify
+                    Growth Engine • Adsify
                 </span>
             </div>
 

@@ -17,8 +17,8 @@ const results = [
 ];
 
 const testimonials = [
-    { name: "Sarah Jenkins", role: "CEO at TechNova", text: "Trustiify scaled our revenue 3x in just 6 months. Their SEO strategy put us on the first page of Google and kept us there.", stars: 5, result: "+300% organic traffic" },
-    { name: "Marcus Reed", role: "Founder, SyncWave", text: "We were burning money on Meta ads before Trustiify. They completely overhauled our strategy and got our CPA down by 60%. Crazy ROI.", stars: 5, result: "10x ROAS" },
+    { name: "Sarah Jenkins", role: "CEO at TechNova", text: "Adsify scaled our revenue 3x in just 6 months. Their SEO strategy put us on the first page of Google and kept us there.", stars: 5, result: "+300% organic traffic" },
+    { name: "Marcus Reed", role: "Founder, SyncWave", text: "We were burning money on Meta ads before Adsify. They completely overhauled our strategy and got our CPA down by 60%. Crazy ROI.", stars: 5, result: "10x ROAS" },
     { name: "Elena Rostova", role: "CMO, NexusBrands", text: "The conversion-first design they built for our landing pages doubled our lead capture rate within the first week of launch. Unmatched team.", stars: 5, result: "2x Lead Capture" },
 ];
 

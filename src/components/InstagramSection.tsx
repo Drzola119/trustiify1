@@ -22,7 +22,7 @@ export default function InstagramSection() {
                     <div>
                         <div className="flex items-center gap-2 mb-4">
                             <InstagramLogo size={24} className="text-brand-pink" weight="fill" />
-                            <span className="text-brand-pink font-bold tracking-wide">@TRUSTIIFY</span>
+                            <span className="text-brand-pink font-bold tracking-wide">@ADSIFY</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-black font-heading text-white mb-4 tracking-tight">
                             Actionable Growth Tactics.
@@ -32,9 +32,9 @@ export default function InstagramSection() {
                         </p>
                     </div>
 
-                    <a href="https://instagram.com/trustiify" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/adsify_global_llc" target="_blank" rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-pink/10 hover:bg-brand-pink/20 border border-brand-pink/30 text-white rounded-full transition-all hover:scale-105 font-medium whitespace-nowrap w-max">
-                        Follow @trustiify
+                        Follow @adsify
                     </a>
                 </div>
 

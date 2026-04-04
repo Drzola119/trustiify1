@@ -14,7 +14,7 @@ const NAV_LINKS = [
 ];
 
 const Logo = () => {
-    const text = "Trustiify";
+    const text = "Adsify";
     return (
         <Link href="/" className="relative group flex items-center">
             <div className="flex text-2xl font-heading font-bold overflow-hidden tracking-tight">
@@ -99,9 +99,9 @@ export default function Navbar() {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.4, duration: 0.5 }}
                     >
-                        <Link href="https://instagram.com/trustiify" target="_blank" className="text-text-secondary hover:text-brand-pink transition-colors flex items-center gap-2 text-sm font-medium py-2">
+                        <Link href="https://www.instagram.com/adsify_global_llc" target="_blank" className="text-text-secondary hover:text-brand-pink transition-colors flex items-center gap-2 text-sm font-medium py-2">
                             <InstagramLogo size={20} weight="regular" />
-                            <span className="hidden lg:inline">@trustiify</span>
+                            <span className="hidden lg:inline">@adsify</span>
                         </Link>
                     </motion.div>
                 </div>
@@ -171,9 +171,9 @@ export default function Navbar() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.5 }}
                             >
-                                <Link href="https://instagram.com/trustiify" className="flex items-center justify-center gap-2 text-white bg-brand-pink/10 hover:bg-brand-pink/20 transition-colors p-4 border border-brand-pink/20 rounded-xl font-medium">
+                                <Link href="https://www.instagram.com/adsify_global_llc" className="flex items-center justify-center gap-2 text-white bg-brand-pink/10 hover:bg-brand-pink/20 transition-colors p-4 border border-brand-pink/20 rounded-xl font-medium">
                                     <InstagramLogo size={24} weight="bold" className="text-brand-pink" />
-                                    Follow @trustiify
+                                    Follow @adsify
                                 </Link>
                             </motion.div>
                         </div>

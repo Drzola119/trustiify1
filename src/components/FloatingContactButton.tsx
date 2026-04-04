@@ -38,9 +38,9 @@ interface ContactFormData {
 // ─── Component ────────────────────────────────────────────────────────────────
 export const FloatingContactButton = ({
     web3formsKey,
-    whatsappNumber = "19083840281",
+    whatsappNumber = "+14302159154",
     email = "ads@trustiify.agency",
-    instagramUrl = "https://instagram.com/trustiify",
+    instagramUrl = "https://www.instagram.com/adsify_global_llc",
 }: FABProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
@@ -145,8 +145,8 @@ export const FloatingContactButton = ({
                     budget: formData.budget,
                     services: formData.services.join(", "),
                     message: formData.message,
-                    subject: `Trustiify — New Strategy Call Request from ${formData.name}`,
-                    from_name: "Trustiify Website",
+                    subject: `Adsify — New Strategy Call Request from ${formData.name}`,
+                    from_name: "Adsify Website",
                     redirect: false,
                 }),
             });
@@ -246,7 +246,7 @@ export const FloatingContactButton = ({
 
                             {/* Text */}
                             <div className="min-w-0">
-                                <h3 className="text-white font-black text-lg leading-tight">Trustiify</h3>
+                                <h3 className="text-white font-black text-lg leading-tight">Adsify</h3>
                                 <p className="text-xs font-bold uppercase tracking-widest bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                                     Scale Your Revenue
                                 </p>

@@ -32,8 +32,8 @@ export default function ContactSection() {
                     email: formData.email,
                     budget: formData.budget,
                     message: formData.message,
-                    subject: `Trustiify — Strategy Call Request from ${formData.name}`,
-                    from_name: "Trustiify Contact Section",
+                    subject: `Adsify — Strategy Call Request from ${formData.name}`,
+                    from_name: "Adsify Contact Section",
                     redirect: false,
                 }),
             });
@@ -121,7 +121,7 @@ export default function ContactSection() {
                             <EnvelopeSimple size={24} />
                             <span className="font-medium">ads@trustiify.agency</span>
                         </a>
-                        <a href="https://wa.me/19083840281?text=Hi%20Trustiify!%20I%20found%20you%20on%20your%20website%20and%20I'd%20like%20to%20book%20a%20strategy%20call." target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-text-secondary hover:text-[#25D366] transition-colors">
+                        <a href="https://wa.me/14302159154?text=Hi%20Adsify!%20I%20found%20you%20on%20your%20website%20and%20I'd%20like%20to%20book%20a%20strategy%20call." target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-text-secondary hover:text-[#25D366] transition-colors">
                             <WhatsappLogo size={24} />
                             <span className="font-medium">WhatsApp Us</span>
                         </a>
